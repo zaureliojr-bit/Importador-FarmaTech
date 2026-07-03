@@ -1,0 +1,31 @@
+.stats{
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 20px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:20px;
+    box-shadow:var(--shadow);
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.card span{
+    color:var(--text-light);
+    font-size:14px;
+}
+
+.card strong{
+    font-size:32px;
+    color:var(--primary);
+}

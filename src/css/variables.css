@@ -1,0 +1,29 @@
+:root{
+
+    /* Cores */
+
+    --primary:#2563eb;
+    --primary-hover:#1d4ed8;
+
+    --success:#22c55e;
+    --warning:#f59e0b;
+    --danger:#ef4444;
+
+    --background:#f5f7fb;
+    --surface:#ffffff;
+
+    --text:#1f2937;
+    --text-light:#6b7280;
+
+    --border:#e5e7eb;
+
+    /* Layout */
+
+    --radius:14px;
+
+    --shadow:
+        0 10px 25px rgba(0,0,0,.05);
+
+    --transition:.25s;
+
+}

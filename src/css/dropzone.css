@@ -1,0 +1,61 @@
+.container{
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:0 20px;
+
+}
+
+.dropzone{
+
+    background:var(--surface);
+
+    border:3px dashed var(--primary);
+
+    border-radius:20px;
+
+    min-height:350px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.dropzone:hover{
+
+    background:#edf4ff;
+
+}
+
+.icon{
+
+    font-size:72px;
+
+    margin-bottom:18px;
+
+}
+
+.dropzone h2{
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+.dropzone p{
+
+    color:var(--text-light);
+
+}
