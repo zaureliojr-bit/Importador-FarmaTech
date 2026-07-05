@@ -1,27 +1,59 @@
 export default function Stats() {
+
+    const cards = [
+
+        {
+            icon:"📦",
+            title:"Produtos",
+            value:"0"
+        },
+
+        {
+            icon:"🖼️",
+            title:"Imagens",
+            value:"0"
+        },
+
+        {
+            icon:"❌",
+            title:"Sem imagem",
+            value:"0"
+        },
+
+        {
+            icon:"💊",
+            title:"Laboratórios",
+            value:"0"
+        }
+
+    ];
+
     return `
+
         <section class="stats">
 
-            <div class="card">
-                <span>📦 Produtos</span>
-                <strong>0</strong>
-            </div>
+            ${cards.map(card=>`
 
-            <div class="card">
-                <span>🖼️ Imagens</span>
-                <strong>0</strong>
-            </div>
+                <div class="card">
 
-            <div class="card">
-                <span>❌ Sem imagem</span>
-                <strong>0</strong>
-            </div>
+                    <div class="card-icon">
+                        ${card.icon}
+                    </div>
 
-            <div class="card">
-                <span>💊 Laboratórios</span>
-                <strong>0</strong>
-            </div>
+                    <div>
+
+                        <small>${card.title}</small>
+
+                        <h2>${card.value}</h2>
+
+                    </div>
+
+                </div>
+
+            `).join("")}
 
         </section>
+
     `;
+
 }
