@@ -1,32 +1,35 @@
+import state from "../state/state";
 export default function Stats() {
 
     const cards = [
 
-        {
-            icon:"📦",
-            title:"Produtos",
-            value:"0"
-        },
+    {
+        icon: "📦",
+        title: "Produtos",
+        value: state.produtos.length
+    },
 
-        {
-            icon:"🖼️",
-            title:"Imagens",
-            value:"0"
-        },
+    {
+        icon: "🖼️",
+        title: "Imagens",
+        value: state.produtos.filter(p => p.imagem).length
+    },
 
-        {
-            icon:"❌",
-            title:"Sem imagem",
-            value:"0"
-        },
+    {
+        icon: "❌",
+        title: "Sem imagem",
+        value: state.produtos.filter(p => !p.imagem).length
+    },
 
-        {
-            icon:"💊",
-            title:"Laboratórios",
-            value:"0"
-        }
+    {
+        icon: "💊",
+        title: "Laboratórios",
+        value: new Set(
+            state.produtos.map(p => p.laboratorio)
+        ).size
+    }
 
-    ];
+];
 
     return `
 

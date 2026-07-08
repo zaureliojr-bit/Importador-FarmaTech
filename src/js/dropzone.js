@@ -1,5 +1,7 @@
 import { lerPlanilha } from "../services/excel.service.js";
-import state from "./state";
+import state from "../state/state";
+import App from "../components/App";
+import render from "./render";
 
 export function iniciarDropZone() {
 
@@ -24,7 +26,7 @@ export function iniciarDropZone() {
 
         // Guarda os produtos no estado da aplicação
         state.produtos = produtos;
-
+        render(App);
         console.log("Estado atualizado:");
         console.log(state);
 
