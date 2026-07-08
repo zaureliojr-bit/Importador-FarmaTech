@@ -1,9 +1,4 @@
-import Header from "../components/Header";
-import DropZone from "../components/DropZone";
-import Stats from "../components/Stats";
+import App from "../components/App";
+import render from "./render";
 
-document.querySelector("#app").innerHTML = `
-    ${Header()}
-    ${DropZone()}
-    ${Stats()}
-`;
+render(App);

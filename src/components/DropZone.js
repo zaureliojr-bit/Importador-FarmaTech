@@ -1,8 +1,17 @@
 export default function DropZone() {
+
     return `
+
         <main class="container">
 
-            <section class="dropzone">
+            <section class="dropzone" id="dropzone">
+
+                <input
+                    type="file"
+                    id="excelInput"
+                    accept=".xls,.xlsx"
+                    hidden
+                >
 
                 <div class="icon">
                     📊
@@ -17,5 +26,7 @@ export default function DropZone() {
             </section>
 
         </main>
+
     `;
+
 }
